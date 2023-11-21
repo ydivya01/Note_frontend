@@ -73,15 +73,18 @@ export default function UpdateNotes() {
 
   return (
     <div>
-        <div className="breadcrump-nav">
-            <Link to='/' className="back-button"></Link> 
-            <button  onClick={removeNote} className="button">Delete Note</button>
-
-        </div>
-      <Link to="/home" className="back-button">
-        <button>Back</button>
+        
+     
+      <div className="breadcrump-nav">
+            {/* <Link to='/' className="back-button"></Link>  */}
+            <button  onClick={removeNote} className="back-button">Delete Note</button>
+            <Link to="/home">
+        <button className="back-button">Back</button>
+        
         
       </Link>
+
+        </div>
       <form onSubmit={updateNote}>
         <div className="" single-note>
           <div>

@@ -31,17 +31,21 @@ input, textarea, select {
   margin-bottom: 10px;
   border: 0;
   background-color: transparent;
+  border: 1px solid #6e85cb;
 }
+
 
 input[type="submit"] {
   margin-top: 20px;
-  background-color: #213547;
+  background-color: #4b72c7;
   color: #fff;
   border: 0;
   height: 40px;
   margin-bottom: 10px;
   text-transform: uppercase;
   border-radius: 10px;
+  border-color: #213547;
+
 }
 
 textarea {
@@ -111,12 +115,17 @@ footer {
 }
 
 .dark-mode{
-  background-color: black;
+  background-color: rgb(59, 53, 53);
 }
 
-.dark-mode h1{
+
+
+
+.dark-mode h4{
   color: white;
 }
+
+
 .logo {
   display: flex;
   align-items: center;
@@ -131,6 +140,7 @@ ul.notes {
   margin: 0;
   flex-wrap: wrap;
   gap: 10px;
+ 
 }
 
 ul.notes li {
@@ -204,8 +214,38 @@ ul.notes p {
 
 .back-button {
   display: block;
+  background-color: #4b72c7; /* Green */
+  border: coral;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 8px 2px;
+  cursor: pointer;
 }
 
+.toggle-button{
+  background-color: #4b72c7; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.logout{
+  background-color: rgb(112, 143, 222);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
 .breadcrump-nav {
   display: flex;
   justify-content: space-between;
@@ -228,10 +268,30 @@ ul.notes p {
 .removed-note span {
   font-size: 6rem;
 }
+.search{
+  border: 2px solid #7e97e1;
+  width: 80%;
+margin-left: 9%
+}
 
 .removed-note a {
   color: #FCD633;
   display: block;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+
+@media (max-width: 280px) {
+  .toggle-button{
+  
+  background-color: #4b72c7; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  
+ 
+  text-align: justify;
+  }
+  
 }

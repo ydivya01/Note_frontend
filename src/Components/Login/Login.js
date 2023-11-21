@@ -43,7 +43,7 @@ await axios.post('http://localhost:8000/login', { email, password})
 
   return (
     <div>
-      {/* {console.log(user)} */}
+     
       <h1 className="login">Login</h1>
       <form action="POST" className="login">
         <input

@@ -1,32 +1,26 @@
 import React from "react";
 import {
-  InputGroup,
-  Input,
+  
   Button,
   Row,
-  Col,
+
   Card,
   CardBody,
   CardImg,
   CardText,
   CardTitle,
-  CardGroup,
-  CardSubtitle,
+  
 } from "reactstrap";
 import { Link } from "react-router-dom";
 function About() {
   return (
     <>
-     
+ 
+     <Link to="/home">
+         <button className="back-button">back</button>
+        </Link>
 
-      <Card>
-        {/* <CardImg
-      alt="Card image cap"
-      src="https://picsum.photos/318/180"
-      top
-      width="80%"
-    /> */}
-        <CardBody>
+      
           <CardTitle tag="h3">
             NoteKeeper: Introducing digital note Keeping app
           </CardTitle>
@@ -37,13 +31,9 @@ function About() {
             <li>A new way of approaching note-taking that allows you to create an interlinked digital database</li>
             </ul>
           </CardText>
-          <Row style={{ margin: "80px" }}>
-        <Link to="/home">
-          <Button className="text-center"> Back</Button>
-        </Link>
-      </Row>
-        </CardBody>
-      </Card>
+          
+       
+      
     </>
   );
 }

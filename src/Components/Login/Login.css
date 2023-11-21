@@ -31,10 +31,21 @@
     outline: none;
     cursor: pointer;
 }
+.dark-mode h1{
+  color: rgb(73, 66, 66);
+}
 
 @media (max-width: 420px) {
     .title {
       font-size: 2.5rem;
+    }
+    .login > input{width: 80%;}
+    .login > .button{width: 93%;}
+  }
+
+  @media (max-width: 280px) {
+    .login{
+     width: 200px;
     }
     .login > input{width: 80%;}
     .login > .button{width: 93%;}

@@ -9,7 +9,11 @@
     box-shadow: 0 0 15px gray;
     background: white;
     position: relative;
+    
 }
+.dark-mode h1{
+    color: white;
+  }
 
 .home > .button{
     background: #1877f2;

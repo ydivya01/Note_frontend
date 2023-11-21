@@ -2,6 +2,7 @@ import React from 'react'
 import Notes from '../Notes/Notes'
 import axios from 'axios'
 import { NavLink } from 'react-router-dom';
+import Search from '../Search/Search';
 //import { useLocation } from 'react-router-dom'
 // import './Home.css'
 
@@ -22,10 +23,11 @@ export default function Home() {
 
   return (
     <div className='home'>
-        <h1>Hello
-           and Welcome to Notekeeper</h1>
+     
+        <h1 className='text-center'>Welcome to Notekeeper</h1>
+           <Search></Search>
         <Notes/>
-        <NavLink onClick={handleLogout}><button>Logout</button></NavLink>
+        <NavLink onClick={handleLogout}><button className='logout'>Logout</button></NavLink>
         {/* <button />Logout<button onClick={handleLogout}>Logout</button> */}
     </div>
   )

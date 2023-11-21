@@ -12,11 +12,12 @@ export default function Header({ handleToggleDarkMode }) {
     <header>
     
       <h4>NoteKeeper</h4>
+      
 <nav>
  <NavLink to="/home">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <button
-          className="header"
+          className="toggle-button"
           onClick={() =>
             handleToggleDarkMode((previousDarkMode) => !previousDarkMode)
           }
